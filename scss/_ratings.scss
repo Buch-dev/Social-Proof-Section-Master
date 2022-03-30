@@ -1,0 +1,46 @@
+.ratings {
+        li {
+            background: $clr-neutral-200;
+            color: $clr-primary-700;
+            font-weight: 800;
+            text-decoration: none;
+            padding: .5rem;
+            margin-bottom: .5rem;
+            max-width: 25rem;
+            margin-left: auto;
+            margin-right: auto;
+
+            &::before {
+                content: '';
+                height: 1rem;
+                width: 100px;
+                background-image: url(/images/icon-star.svg);
+                margin: 0 auto;
+                display: block;
+                margin-bottom: .5rem;
+                background-repeat: space;
+            }
+
+            @media (min-width: 50em) {
+                display: flex;
+                
+
+
+                &::before {
+                    margin: 0 1.5rem 0 0;
+                }
+
+                &:first-of-type {
+                    transform: translateX(-3rem);
+                }
+
+                &:last-of-type {
+                    transform: translateX(3rem);
+                }
+            }
+
+
+        }
+    
+        
+}
